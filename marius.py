@@ -24,7 +24,7 @@ MariusHotel = {'name' : "Marius Hotel",
 Hotels.append(MariusHotel)
 
 SuraHagiaSophiaHotel = {'name' : "Sura Hagia Sophia Hotel",
-    'url' : "https://www.booking.com/hotel/tr/marius.tr.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaE2IAQGYASi4ARjIAQzYAQHoAQH4AQuIAgGoAgS4AseovK8GwAIB0gIkNjhlNjcxODYtNzcxZC00NGUzLWI3MjEtNzQ2Y2I5OGM2YTcx2AIG4AIB&sid=b7ac61bf62b0cde97d9144f28453d42a&all_sr_blocks=912126303_362556976_2_1_0;checkin="+checkin+";checkout="+checkout+";dest_id=9121263;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=912126303_362556976_2_1_0;hpos=1;matching_block_id=912126303_362556976_2_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=912126303_362556976_2_1_0__39148;srepoch=1710168701;srpvid=fb87687835c00076;type=total;ucfs=1&selected_currency=EUR#hotelTmpl",
+    'url' : "https://www.booking.com/hotel/tr/sura-hagia-sophia.tr.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaE2IAQGYASi4ARjIAQzYAQHoAQH4AQuIAgGoAgS4AseovK8GwAIB0gIkNjhlNjcxODYtNzcxZC00NGUzLWI3MjEtNzQ2Y2I5OGM2YTcx2AIG4AIB&sid=b7ac61bf62b0cde97d9144f28453d42a&all_sr_blocks=100783926_88798703_2_2_0;checkin="+checkin+";checkout="+checkout+";dest_id=1007839;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=100783926_88798703_2_2_0;hpos=1;matching_block_id=100783926_88798703_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=100783926_88798703_2_2_0__75452;srepoch=1710272097;srpvid=28ee89af83f90005;type=total;ucfs=1&selected_currency=EUR#hotelTmpl",
              "rooms" : {'Superior Çift Kişilik veya İki Yataklı Oda' : "Superior Çift Kişilik Oda" ,
                          'Deluxe Çift Kişilik veya İki Yataklı Oda' : "Comfort Çift Kişilik Oda",
                            'Deluxe Üç Kişilik Oda': "Eşleşen Oda Yok",
@@ -322,7 +322,7 @@ for column in df:
     col_idx = df.columns.get_loc(column)
     writer.sheets['sheetName'].set_column(col_idx, col_idx, column_length)
 
-writer.save()
+writer.close()
 
         
         
